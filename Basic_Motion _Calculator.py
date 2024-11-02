@@ -14,10 +14,12 @@
 
     # My code here
 def calc_final_velocity(initial_velocity, acceleration, time):
-    #Let, Intial_Velocity=u, acceleration=a, time=t
-    initial_velocity=float(input("Take your initial velocity in m/s: "))
-    acceleration=float(input("Take your acceleration in m/s²: "))
-    time=float(input("Take your time in second: "))
-    final_velocity = initial_velocity+acceleration* time
-    print("The final velocity is:",final_velocity,"m/s")
-calc_final_velocity(8.0,7.6,9.0)
+    final_velocity = initial_velocity + acceleration * time
+    print("The final velocity (v) is:",final_velocity,"m/s")
+
+if __name__=='__main__':
+   initial_velocity = float(input("Enter initial velocity (u) in m/s: "))
+   acceleration = float(input("Enter acceleration (a) in m/s²: "))
+   time = float(input("Enter time (t) in second: "))
+   print()
+   calc_final_velocity(initial_velocity, acceleration, time)
