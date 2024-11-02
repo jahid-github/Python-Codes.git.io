@@ -16,7 +16,7 @@ def calc_displacement(initial_velocity, acceleration, time):
   if time < 0:
     return None
   else:
-    displacement = initial_velocity * time + 0.5 * acceleration * time ** 2
+    displacement = (initial_velocity * time) + (0.5 * acceleration * time ** 2)
     print("The displacement (s) is:", displacement, "m")
     
 if __name__=='__main__':
@@ -25,6 +25,20 @@ if __name__=='__main__':
    time = float(input("Enter time (t) in second: "))
    print()
    calc_displacement(initial_velocity, acceleration, time)
+  
+#SampleInput1
+#Enter initial velocity (u) in m/s: 0
+#Enter acceleration (a) in m/s²: 9.81
+#Enter time (t) in second: 2
+#SampleOutput1
+#The displacement (s) is: 19.62 m
+
+#SampleInput2
+#Enter initial velocity (u) in m/s: 20
+#Enter acceleration (a) in m/s²: -5
+#Enter time (t) in second: -4
+#SampleOutput2
+#None
  
 
 
