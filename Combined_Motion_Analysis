@@ -1,5 +1,5 @@
 **Combined Motion Analysis**
-Create a program that:
+#Create a program that:
 
 Asks the user for initial velocity, acceleration, and time
 Calculates and displays:
@@ -21,6 +21,7 @@ def analyze_motion():
     except ValueError:
         print("Please enter valid numbers")
         return None
+
 ##My Code Here##
 def analyze_motion():
     try: 
@@ -40,3 +41,17 @@ def analyze_motion():
         print("Please enter valid numbers")
         return None
 analyze_motion()
+
+#SmapleInput1
+#Enter the initial velocity (m/s): 0
+#Enter the acceleration (m/s²): 9.81
+#Enter the time (s): 2
+#SampleOutput1
+#{'Final Velocity (m/s)': 19.62,
+ #'Displacement (m)': 19.62,
+ #'Average Velocity (m/s)': 9.81}
+
+#SampleInput2
+#Enter the initial velocity (m/s): five
+#SampleOutput2
+#Please enter valid numbers
