@@ -29,18 +29,22 @@ def analyze_motion():
       acceleration = float(input("Enter the acceleration (m/s²): "))
       time = float(input("Enter the time (s): "))
       final_velocity = initial_velocity + (acceleration * time)
+      rounded_number1=round(final_velocity,2)
       displacement = (initial_velocity * time) + (0.5 * acceleration * time**2)
+      rounded_number2=round(displacement,2)
       average_velocity = displacement / time
+      rounded_number3=round(average_velocity,2)
       results = {  
-            'Final Velocity (m/s)': final_velocity,
-            'Displacement (m)': displacement,
-            'Average Velocity (m/s)': average_velocity,
+            'Final Velocity (m/s)': rounded_number1,
+            'Displacement (m)': rounded_number2,
+            'Average Velocity (m/s)': rounded_number3,
             }
       return results
     except ValueError:
         print("Please enter valid numbers")
         return None
 analyze_motion()
+
 
 #SmapleInput1
 #Enter the initial velocity (m/s): 0
