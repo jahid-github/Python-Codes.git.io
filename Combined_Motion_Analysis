@@ -1,1 +1,42 @@
+**Combined Motion Analysis**
+Create a program that:
 
+Asks the user for initial velocity, acceleration, and time
+Calculates and displays:
+Final velocity
+Displacement
+Average velocity (hint: average velocity = displacement/time)
+Includes error handling for invalid inputs
+def analyze_motion():
+    """
+    Get user input and display comprehensive motion analysis
+    
+    Returns:
+    dict: Dictionary containing all calculated values
+    None: If inputs are invalid
+    """
+    try:
+        # Your code here for input and calculations
+        pass
+    except ValueError:
+        print("Please enter valid numbers")
+        return None
+##My Code Here##
+def analyze_motion():
+    try: 
+      initial_velocity = float(input("Enter the initial velocity (m/s): "))
+      acceleration = float(input("Enter the acceleration (m/s²): "))
+      time = float(input("Enter the time (s): "))
+      final_velocity = initial_velocity + (acceleration * time)
+      displacement = (initial_velocity * time) + (0.5 * acceleration * time**2)
+      average_velocity = displacement / time
+      results = {  
+            'Final Velocity (m/s)': final_velocity,
+            'Displacement (m)': displacement,
+            'Average Velocity (m/s)': average_velocity,
+            }
+      return results
+    except ValueError:
+        print("Please enter valid numbers")
+        return None
+analyze_motion()
