@@ -17,7 +17,8 @@ def calc_displacement(initial_velocity, acceleration, time):
     return None
   else:
     displacement = (initial_velocity * time) + (0.5 * acceleration * time ** 2)
-    print("The displacement (s) is:", displacement, "m")
+    rounded_number=round(displacement,2)
+    print("The displacement (s) is:", rounded_number, "m")
     
 if __name__=='__main__':
    initial_velocity = float(input("Enter initial velocity (u) in m/s: "))
