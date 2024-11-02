@@ -15,7 +15,8 @@
     # My code here
 def calc_final_velocity(initial_velocity, acceleration, time):
     final_velocity = initial_velocity + (acceleration * time)
-    print("The final velocity (v) is:",final_velocity,"m/s")
+    rounded_number=round(final_velocity,2)
+    print("The final velocity (v) is:",rounded_number,"m/s")
 
 if __name__=='__main__':
    initial_velocity = float(input("Enter initial velocity (u) in m/s: "))
