@@ -1,0 +1,14 @@
+"""Temperature check
+The following code should receive a temperature reading from a sensor placed in a water container and report: 'Hot' for temperature above 40°C; 'Warm' for temperature between 25 and 40°C; 'Cold' for less than 25°C; 'Invalid' if below 0 or above 100°C. Check if it works correctly. If not, what is the problem? What would be a solution?
+"""
+# Get temperature input from user
+temperature = float(input("Enter the water temperature in °C: "))
+
+if temperature < 0 or temperature > 100:
+    print("Invalid")
+elif temperature > 25:
+    print("Warm")
+elif temperature > 40:
+    print("Hot")
+else:
+    print("Cold")
