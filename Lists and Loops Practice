@@ -1,0 +1,40 @@
+"""Here's the Python code for each of the tasks you've mentioned:
+
+Double each number in a list creating a new list:
+python
+"""
+numbers = [1, 2, 3, 4, 5]
+doubled = [x * 2 for x in numbers]
+print(doubled)
+
+"""Print only even numbers from a list:
+python
+"""
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = [x for x in numbers if x % 2 == 0]
+print(even_numbers)
+
+"""Print only those numbers in a list that are smaller than 5:
+python
+"""
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+smaller_than_five = [x for x in numbers if x < 5]
+print(smaller_than_five)
+
+"""Create a list of even numbers from 0 to 10 using range:
+python
+"""
+even_numbers = [x for x in range(0, 11) if x % 2 == 0]
+print(even_numbers)
+
+""""Create a list of numbers from 10 to 1 (counting down):
+python
+"""
+countdown = [x for x in range(10, 0, -1)]
+print(countdown)
+
+
+
+
+
+
