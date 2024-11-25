@@ -1,0 +1,23 @@
+"""Shipping costs
+The following code should calculate the shipping cost for an online store based on the purchase amount:
+
+    Free shipping for purchases above $200
+    $15 shipping fee for purchases between $100 and $200
+    $25 shipping fee for purchases between $50 and $100
+    $35 shipping fee for purchases under $50
+    The code should print 'Invalid Amount' if the purchase value is negative"
+Here is one solution, but it is not working correctly. First, think about how many values you need to cover all the options. Then, identify and correct the bugs.
+"""
+purchase_amount = int(input("Enter purchase amount: $"))
+discount = 100 / (purchase_amount - 200)
+
+if purchase_amount < 0:
+    print("Invalid Amount")
+elif purchase_amount > 200:
+    print("Free Shipping")
+elif purchase_amount > 100:
+    print("Shipping cost: $15")
+elif purchase_amount >= 50:
+    print("Shipping cost: $25")
+else:
+    print("Shipping cost: $35")
