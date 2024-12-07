@@ -13,6 +13,8 @@ class Rectangle:
     def __init__(self,length,width):
         self.length = length
         self.width = width
+    def __str__ (self):
+        return f'rect with {self.length} and {self.width}'
     def area (self):
         return self.width*self.length
 s1=Square(4)
