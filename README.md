@@ -125,5 +125,5 @@ print(results.summary())
 
 **Why These Libraries?**
 
-**Essential for Data Science: These libraries cover all aspects of data analysis, visualization, and machine learning.
-Widely Used: They are popular, well-documented, and actively maintained.**
+- Essential for Data Science: These libraries cover all aspects of data analysis, visualization, and machine learning.
+- Widely Used: They are popular, well-documented, and actively maintained.
